@@ -13,4 +13,9 @@ CREATE TABLE BOOKS(
   ALTER TABLE BOOKS,
   ADD COLUMN   publisher TEXT,
    ADD COLUMN   number of pages INTEGER,
-  
+
+   //insert
+   INSERT INTO BOOKS VALUES ("A Journey to the Center","Jules Verne","Adventure",1864,1234567890123,$12.99, 4.5,"Verne Publishing",350)
+   INSERT INTO BOOKS VALUES ("War and Peace","Leo Tolstoy","Adventure",1864,1234567890123,$12.99, 4.5,"Verne Publishing",350)
+   INSERT INTO BOOKS VALUES ("A Journey to the Center","Amelia Blackburnules Verne","Adventure",1864,1234567890123,$12.99, 4.5,"Verne Publishing",350)
+   INSERT INTO BOOKS VALUES ("The Galactic Odyssey","Orion Starfield","Adventure",1864,1234567890123,$12.99, 4.5,"Verne Publishing",350)
