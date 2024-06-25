@@ -28,3 +28,7 @@ WHERE title = "War and Peace"
 //grant exercise
 
 GRANT SELECT, INSERT ON BOOKS TO martin@localhost
+
+//revoke permission
+
+REVOKE INSERT ON BOOKS TO martin@localhost
