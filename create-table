@@ -20,7 +20,11 @@ CREATE TABLE BOOKS(
    INSERT INTO BOOKS VALUES ("A Journey to the Center","Amelia Blackburnules Verne","Adventure",1864,1234567890123,$12.99, 4.5,"Verne Publishing",350)
    INSERT INTO BOOKS VALUES ("The Galactic Odyssey","Orion Starfield","Adventure",1864,1234567890123,$12.99, 4.5,"Verne Publishing",350)
 
-//update
+//update TABLE BOOKS
 
 UPDATE BOOKS SET price = $12.99, stock_count = 349
 WHERE title = "War and Peace" 
+
+//grant exercise
+
+GRANT SELECT, INSERT ON BOOKS TO martin@localhost
