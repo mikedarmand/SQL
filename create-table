@@ -44,3 +44,28 @@ COMMIT;
 BEGIN TRANSACTION;
 DELETE FROM BOOKS WHERE  BookID = 103 ;
 ROLLBACK;
+
+//Examples of Basic SQL queries
+Display female passengers who survived and are older than 30.
+Find the average age of men who didn't survive.
+Display information for passengers who spent between $20 and $50 on their tickets and got on the ship at port 'C'."
+Find the total number of the survivors in the first class.
+. Show the information of passengers who boarded from Cherbourg (port 'C') and spent more than $75 on their tickets.".
+
+SELECT * FROM Titanic1
+WHERE sex= female AND survived = 1 AND age > 30;
+
+SELECT AVG(age) AS average_age
+FROM Titanic1
+WHERE sex = 'male' AND survived = 0;
+
+SELECT * FROM Titanic1
+WHERE Fare BETWEEN 20 AND 50
+AND embarked = 'C'
+
+SELECT COUNT(*)
+FROM Titanic1
+WHERE survived = 1 AND pclass = 1;
+
+SELECT * FROM Titanic1
+WHERE Fare > 75 AND embarked = 'C'
